@@ -1,0 +1,133 @@
+/* Importa la fuente Poppins desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Estilo global para resetear padding y margen, y aplicar la fuente */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+/* Estilo del body, centrado y con fondo claro */
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f9fafb;
+}
+
+/* Contenedor principal del formulario */
+.contenedor {
+  width: 1200px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Estilo del título principal */
+.contenedor h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+/* Estilo del párrafo que describe el boletín */
+.contenedor p {
+  width: 60%;
+  color: #6c727f;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Estilos del formulario */
+form {
+  width: 550px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 10px;
+  /* Sombra suave alrededor del formulario */
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo del campo de entrada de email */
+input[type="email"] {
+  width: 80%;
+  padding: 14px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin: 25px 0px;
+}
+
+/* Estilo del texto de placeholder en el campo de email */
+input[type="email"]::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #6c727f;
+}
+
+/* Estilo del botón de enviar */
+button {
+  width: 85%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 13px;
+  background-color: #3662e3;
+  border: 1px solid #e5e7eb;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Estilo del texto que indica confidencialidad */
+span {
+  width: 80%;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 20px 0px;
+  color: #6c727f;
+}
+/* Estilos para pantallas pequeñas con un ancho máximo de 640px */
+@media (max-width: 640px) {
+  .contenedor {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .contenedor h1 {
+    font-size: 2rem;
+  }
+
+  .contenedor p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  form {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  input[type="email"] {
+    width: 85%;
+  }
+
+  button {
+    width: 90%;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
